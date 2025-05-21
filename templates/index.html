@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Python Workshop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #f0f0f5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      border-radius: 15px;
+      max-width: 480px;
+      width: 100%;
+      padding: 3rem 2.5rem;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 2.75rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1.2px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    }
+
+    p.description {
+      font-size: 1.2rem;
+      margin-bottom: 2.2rem;
+      line-height: 1.5;
+      color: #e0e0ffcc;
+    }
+
+    .organizer {
+      background: rgba(255, 255, 255, 0.18);
+      padding: 1.4rem 2rem;
+      border-radius: 12px;
+      margin-bottom: 1.8rem;
+      box-shadow: inset 0 0 10px #5e4ec8;
+      text-align: left;
+      color: #dcdcff;
+      font-size: 1rem;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    .organizer strong {
+      color: #c2b7ff;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .organizer strong::before {
+      content: '•';
+      color: #a29bfe;
+      font-size: 1.4rem;
+      line-height: 0;
+      margin-right: 0.6rem;
+      transform: scale(1.3);
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 2.5rem;
+      margin-top: 0;
+    }
+
+    .social-link {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff33;
+      border-radius: 50%;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+    .social-link svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+    .social-link:hover,
+    .social-link:focus {
+      background-color: #a292f3;
+      color: #3f2a65;
+      transform: translateY(-4px);
+      outline: none;
+      box-shadow: 0 10px 20px rgba(161, 146, 243, 0.8);
+    }
+
+    .btn-register {
+      display: inline-block;
+      padding: 0.9rem 3.4rem;
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: #764ba2;
+      background: #fff;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.7);
+      transition: all 0.3s ease;
+      user-select: none;
+    }
+
+    .btn-register:hover,
+    .btn-register:focus {
+      background: #a292f3;
+      color: #3f2a65;
+      box-shadow: 0 12px 30px rgba(161, 146, 243, 0.8);
+      transform: translateY(-3px);
+      outline: none;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      .btn-register {
+        font-size: 1.1rem;
+        padding: 0.75rem 2.5rem;
+      }
+      .container {
+        padding: 2.2rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Python for Beginners Workshop</h1>
+    <p class="description">
+      Learn the fundamentals of Python programming and explore exciting career opportunities!  
+      Join us for a fun, interactive 3-hour session packed with hands-on examples.
+    </p>
+
+    <div class="organizer" aria-label="Organizer Details">
+      <div><strong>Organizer:</strong> Sandeep Kumar Kanchamreddy</div>
+      <div><strong>Email:</strong> sandeep.kanchamreddy24@gmail.com</div>
+      <div><strong>Contact:</strong> +91 8500556451</div>
+    </div>
+
+    <div class="social-links" aria-label="Social media and contact links">
+      <a class="social-link" href="https://wa.me/918500556451" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.52 3.48a11.794 11.794 0 00-16.68 0 11.904 11.904 0 00-3.05 8.04c0 2.1.56 4.14 1.63 5.95L2 22l4.7-1.23a11.845 11.845 0 005.84 1.52 11.9 11.9 0 008.04-3.05 11.794 11.794 0 000-16.76zm-8.5 14.13a8.048 8.048 0 01-4.33-1.24l-.31-.19-2.8.73.75-2.73-.2-.28a8.06 8.06 0 111.95 3zM13.22 12.9c-.15-.07-.86-.43-1-.48-.15-.05-.27-.06-.39.07-.12.12-.48.48-.59.58-.1.12-.19.13-.35.04-.15-.1-.63-.23-1.2-.74-.44-.4-.73-.9-.81-1.04-.09-.14-.01-.22.06-.29.06-.06.14-.16.21-.25.07-.09.09-.15.14-.25.04-.1 0-.18-.01-.25-.01-.07-.4-.95-.55-1.3-.15-.34-.3-.29-.41-.29-.11 0-.23 0-.35 0-.12 0-.31.04-.48.21-.18.16-.69.68-.69 1.66 0 .98.71 1.92.81 2.06.1.14 1.4 2.12 3.39 2.96.47.2.84.32 1.13.41.47.14.9.12 1.24.07.38-.06 1.17-.48 1.34-.94.17-.46.17-.85.12-.94-.04-.1-.14-.16-.29-.23z"/></svg>
+      </a>
+      <a class="social-link" href="mailto:sandeep.kanchamreddy24@gmail.com" aria-label="Send Email">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5z"/></svg>
+      </a>
+      <a class="social-link" href="https://instagram.com/i.amtonie" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7.75 2h8.5A5.76 5.76 0 0122 7.75v8.5A5.76 5.76 0 0116.25 22h-8.5A5.76 5.76 0 012 16.25v-8.5A5.76 5.76 0 017.75 2zm4.25 5a4 4 0 104 4 4 4 0 00-4-4zm5.15-.85a1.15 1.15 0 11-1.15-1.15 1.15 1.15 0 011.15 1.15z"/></svg>
+      </a>
+      <a class="social-link" href="https://www.linkedin.com/in/sandeep-kumar-kanchamreddy/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.98 3.5A2.5 2.5 0 002.5 6v12a2.5 2.5 0 002.48 2.5h14.02a2.5 2.5 0 002.5-2.5V6a2.5 2.5 0 00-2.5-2.5H4.98zm1.94 14H6.5V9.5h.42v8zm-1.3-9.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zm9.75 9.25h-1.38v-4.5c0-1.07-.75-1.25-1.12-1.25-.38 0-1.13.23-1.13 1.25v4.5H9.5V9.5h1.32v1.17h.02a1.44 1.44 0 011.3-.71c1.39 0 1.65.91 1.65 2.1v4.99z"/></svg>
+      </a>
+    </div>
+
+    <a href="/register" class="btn-register" role="button" aria-label="Register for the Python Workshop">Register Here</a>
+  </div>
+</body>
+</html>
